@@ -200,11 +200,14 @@ body {
     
     .review-card,
     .price-card {
-        padding: 12px 14px; /* meno spazio sopra/sotto */
+        padding: 12px 14px;
         border-radius: 10px;
         width: 85%;
         max-width: 320px;
         margin: 0;
+          flex: none;
+         height: auto;
+         display: block;
     }
 
     .reviews,
