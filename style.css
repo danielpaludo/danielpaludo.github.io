@@ -200,15 +200,11 @@ body {
     
     .review-card,
     .price-card {
-        padding: 14px;
+        padding: 12px 14px; /* meno spazio sopra/sotto */
         border-radius: 10px;
         width: 85%;
         max-width: 320px;
         margin: 0;
-    }
-
-    .price {
-        font-size: 20px;
     }
 
     .reviews,
@@ -218,19 +214,24 @@ body {
         align-items: center;
     }
 
-     .review-card p,
-    .price-card p {
-        font-size: 14px;
-    }
-
-    .review-card h4 {
-        font-size: 14px;
-    }
-
     .btn {
         padding: 14px 22px;
         font-size: 16px;
     }
+
+    .review-card p,
+    .price-card p {
+        margin: 6px 0;
+    }
+
+    .review-card h4 {
+        margin-top: 8px;
+    }
+
+    .price {
+        margin: 6px 0;
+    }
+    
 }
 
     .section {
