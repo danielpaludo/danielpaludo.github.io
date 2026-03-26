@@ -191,15 +191,32 @@
     });
 </script>
     
-    <script>
+<script>
+    const navLinks = document.getElementById("navLinks");
+    const menuToggle = document.querySelector(".menu-toggle");
+
     function toggleMenu() {
-        document.getElementById("navLinks").classList.toggle("show");
+        navLinks.classList.toggle("show");
+
+        if (navLinks.classList.contains("show")) {
+            menuToggle.textContent = "✕";
+        } else {
+            menuToggle.textContent = "☰";
+        }
     }
 
     document.querySelectorAll('#navLinks a').forEach(link => {
         link.addEventListener('click', () => {
-            document.getElementById('navLinks').classList.remove('show');
+            navLinks.classList.remove('show');
+            menuToggle.textContent = "☰";
         });
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+            navLinks.classList.remove('show');
+            menuToggle.textContent = "☰";
+        }
     });
 </script>
 </body>
