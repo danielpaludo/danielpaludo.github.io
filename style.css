@@ -168,16 +168,17 @@ body {
         align-items: center;
         gap: 12px;
         width: 100%;
-        background-color: white;
+        background-color: black;
         position: absolute;
         top: 100%;
         left: 0;
         padding: 15px 0;
-        box-shadow: 0 4px 12px rgba(0 0, 0, 0.08);
+        box-shadow: 0 4px 12px rgba(0 0, 0, 0.2);
     }
 
     .nav-links.show {
         display: flex;
+        color: white;
     }
 
     .hero {
@@ -488,6 +489,6 @@ body {
     border: none;
     font-size: 28px;
     cursor: pointer;
-    color: #111;
+    color: #ffffff;
     padding: 4px 8px;
 }
