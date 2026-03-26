@@ -10,7 +10,10 @@
 
     <nav class="navbar">
         <div class="logo">Élégance</div>
-  <ul class="nav-links">
+        
+         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <ul class="nav-links" id="navLinks">
     <li><a href="#chi-siamo">Chi siamo</a></li>
     <li><a href="#servizi">Servizi</a></li>
     <li><a href="#prezzi">Prezzi</a></li>
@@ -186,6 +189,11 @@
     fadeElements.forEach(element => {
         observer.observe(element);
     });
+</script>
+    <script>
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
 </script>
 </body>
 </html>
