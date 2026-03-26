@@ -147,9 +147,11 @@ body {
     }
 
     .navbar {
-        flex-direction: column;
-        gap: 15px;
         padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     .reviews {
@@ -161,9 +163,21 @@ body {
     }
 
     .nav-links {
+        display: none;
         flex-direction: column;
         align-items: center;
         gap: 12px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 15px 0;
+        box-shadow: 0 4px 12px rgba(0 0, 0, 0.08);
+    }
+
+    .nav-links.show {
+        display: flex;
     }
 
     .hero {
@@ -290,6 +304,7 @@ body {
     border: none;
     cursor: pointer;
 }
+
 .reviews {
     display: flex;
     flex-wrap: wrap;
@@ -308,6 +323,7 @@ body {
     justify-content: space-between;
     border-top: 2px solid #000000;
 }
+
 .review-card p {
     padding: 0;
     margin: 0;
@@ -464,4 +480,14 @@ body {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #111;
+    padding: 4px 8px;
 }
