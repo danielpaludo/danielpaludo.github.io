@@ -197,6 +197,18 @@ body {
     .contact-form {
         padding: 20px;
     }
+    .review-card,
+.price-card {
+    padding: 14px;
+    border-radius: 10px;
+}
+    .price {
+    font-size: 20px;
+}
+    .reviews,
+.prices {
+    gap: 12px;
+}
 
     .btn {
         padding: 14px 22px;
