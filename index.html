@@ -190,10 +190,17 @@
         observer.observe(element);
     });
 </script>
+    
     <script>
     function toggleMenu() {
         document.getElementById("navLinks").classList.toggle("show");
     }
+
+    document.querySelectorAll('#navLinks a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('show');
+        });
+    });
 </script>
 </body>
 </html>
