@@ -155,11 +155,16 @@ body {
     .navbar {
         padding: 15px 20px;
         position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .menu-toggle {
         line-height: 1;
-        display: block;
+        display: block !important;
+        color: white;
+        font-size: 28px;
     }
 
     .reviews {
