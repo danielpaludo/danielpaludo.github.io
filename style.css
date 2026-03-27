@@ -53,13 +53,6 @@ body {
     color: #bb9626;
 }
 
-.navbar,
-.hero {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(50% - 50vw);
-}
-
 html, body {
     margin: 0;
     padding: 0;
