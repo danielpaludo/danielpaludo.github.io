@@ -154,6 +154,9 @@ body {
     .menu-toggle {
         display: block;
         color: white;
+        position: absolute;
+        right: 20px;
+        top: 15px;
     }
 
     .reviews {
@@ -496,4 +499,5 @@ body {
     cursor: pointer;
     color: white;
     padding: 4px 8px;
+    z-index: 1100;
 }
