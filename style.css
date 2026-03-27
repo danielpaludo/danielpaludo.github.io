@@ -162,7 +162,7 @@ body {
 
     .menu-toggle {
         line-height: 1;
-        display: block;
+        display: block !important;
         color: white;
         font-size: 28px;
     }
