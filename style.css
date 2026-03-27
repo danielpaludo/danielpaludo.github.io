@@ -1,9 +1,11 @@
-body {
-    html {
+html {
     scroll-behavior: smooth;
 }
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
     background-color: #81775fdc;
     color: #ffffff;
 }
@@ -52,6 +54,14 @@ body {
 .nav-links a:hover {
     color: #bb9626;
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .hero {
     background: url("https://images.unsplash.com/photo-1633681926035-ec1ac984418a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center/cover no-repeat;
     color: rgb(255, 255, 255)
@@ -280,9 +290,6 @@ body {
     
 }
 
-    .section {
-        margin: 30px auto;
-    }
     .whatsapp-btn {
     position: fixed;
     right: 15px;
