@@ -152,11 +152,14 @@ body {
     }
 
     .menu-toggle {
-        display: block;
-        color: white;
+        display: block !important;
+        color: yellow;
         position: absolute;
         right: 20px;
         top: 15px;
+        background: red;
+        font-size: 40px;
+        z-index: 9999;
     }
 
     .reviews {
