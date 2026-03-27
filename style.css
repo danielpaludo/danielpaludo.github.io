@@ -148,10 +148,12 @@ body {
 
     .navbar {
         padding: 15px 20px;
+        position: relative;
     }
 
     .menu-toggle {
         display: block;
+        color: white;
     }
 
     .reviews {
@@ -490,8 +492,8 @@ body {
     display: none;
     background: none;
     border: none;
-    font-size: 28px;
+    font-size: 30px;
     cursor: pointer;
-    color: #ffffff;
+    color: white;
     padding: 4px 8px;
 }
